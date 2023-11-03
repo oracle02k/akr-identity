@@ -1,0 +1,16 @@
+{
+    "name": "a-nakano/identity-t",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "ANakano\\IdentityT\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "oracle02k",
+            "email": "oracle02k@gmail.com"
+        }
+    ],
+    "require": {}
+}
