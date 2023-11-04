@@ -10,6 +10,9 @@ class Hello
     {
     }
 
+    /**
+     * @return non-empty-string
+     */
     public function sayHello(): string
     {
         return "hello {$this->name}";
