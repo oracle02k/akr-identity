@@ -6,14 +6,14 @@
  */
 $config = new PhpCsFixer\Config();
 return $config
-        ->setRiskyAllowed(true)
+    ->setRiskyAllowed(true)
     ->setRules([
         '@PSR12' => true, // ここにルール追記
     ])
-    ->setFinder(PhpCsFixer\Finder::create()
-        ->exclude([ // 除外ファイル
-              'vendor'
-        ]) 
+    ->setFinder(
+        PhpCsFixer\Finder::create()
+            ->exclude([ // 除外ファイル
+                'vendor'
+            ])
         ->in(__DIR__)
-    )
-;
+    );
