@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ANakano\IdentityT;
+namespace znr\identity;
 
 /**
  * @template T of object

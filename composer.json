@@ -1,9 +1,9 @@
 {
-    "name": "a-nakano/identity-t",
+    "name": "znr/identity",
     "type": "library",
     "autoload": {
         "psr-4": {
-            "ANakano\\IdentityT\\": "src/"
+            "znr\\identity\\": "src/"
         }
     },
     "authors": [

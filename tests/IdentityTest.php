@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use ANakano\IdentityT\Identity;
+use znr\identity\Identity;
 use PHPUnit\Framework\TestCase;
 
 class Base
@@ -15,7 +15,7 @@ class Derived extends Base
 {
 };
 
-final class TestIdentity extends TestCase
+final class IdentityTest extends TestCase
 {
     /**
      * @test
