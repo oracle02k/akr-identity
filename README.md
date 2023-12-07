@@ -1,6 +1,6 @@
-# znr-identity
+# akr-identity
 
-znr-identity utilizes psalm's static analysis to provide type Id.
+akr-identity utilizes psalm's static analysis to provide type Id.
 
 ## motivation
 
@@ -10,5 +10,5 @@ znr-identity utilizes psalm's static analysis to provide type Id.
 
 ## spec
 
-- znr-identity detects the comparison of different types by static analysis and throws an error.
-- znr-identity caches values so you can take advantage of strict comparisons.
+- akr-identity detects the comparison of different types by static analysis and throws an error.
+- akr-identity caches values so you can take advantage of strict comparisons.
