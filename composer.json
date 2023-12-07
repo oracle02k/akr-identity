@@ -1,9 +1,9 @@
 {
-    "name": "znr/identity",
+    "name": "akr/identity",
     "type": "library",
     "autoload": {
         "psr-4": {
-            "znr\\identity\\": "src/"
+            "akr\\identity\\": "src/"
         }
     },
     "authors": [

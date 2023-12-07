@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace znr\identity;
+namespace akr\identity;
 
 /**
  * @template T of object

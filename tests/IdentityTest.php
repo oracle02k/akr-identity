@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use znr\identity\Identity;
+use akr\identity\Identity;
 use PHPUnit\Framework\TestCase;
 
 class Base
