@@ -17,10 +17,7 @@ class Derived extends Base
 
 final class IdentityTest extends TestCase
 {
-    /**
-     * @test
-     */
-    public function Identityは厳密比較可能(): void
+    public function testIdentityは厳密比較可能(): void
     {
         $id1 = Identity::create(Base::class, 0);
         $id2 = Identity::create(Base::class, 0);
@@ -30,10 +27,7 @@ final class IdentityTest extends TestCase
         $this->assertFalse($id1 === $id3);
     }
 
-    /**
-     * @test
-     */
-    public function 異なる型Identityの比較はfalseとなる(): void
+    public function test異なる型Identityの比較はfalseとなる(): void
     {
         $id1 = Identity::create(Base::class, 0);
         $id2 = Identity::create(Other::class, 0);
@@ -42,10 +36,7 @@ final class IdentityTest extends TestCase
         $this->assertTrue(true); //ダミーのテスト
     }
 
-    /**
-     * @test
-     */
-    public function ベースクラスと派生クラスのId比較はfalseとなる(): void
+    public function testベースクラスと派生クラスのId比較はfalseとなる(): void
     {
         $id1 = Identity::create(Base::class, 0);
         $id2 = Identity::create(Derived::class, 0);
