@@ -32,8 +32,8 @@ final class IdentityTest extends TestCase
         $id1 = Identity::create(Base::class, 0);
         $id2 = Identity::create(Other::class, 0);
 
-        //$this->assertFalse($id1 === $id2); // If static analysis is enabled, an error occurs because the type is different.
-        $this->assertTrue(true); //dummy assertion.
+        /** @psalm-suppress TypeDoesNotContainType */
+        $this->assertFalse($id1 === $id2); // If static analysis is enabled, an error occurs because the type is different.
     }
 
     public function testShouldBeFalseWhenComparingBaseClassAndDerivedClass(): void
@@ -41,7 +41,7 @@ final class IdentityTest extends TestCase
         $id1 = Identity::create(Base::class, 0);
         $id2 = Identity::create(Derived::class, 0);
 
-        //$this->assertFalse($id1 === $id2); // If static analysis is enabled, an error occurs because the type is different.
-        $this->assertTrue(true); //dummy assertion.
+        /** @psalm-suppress TypeDoesNotContainType */
+        $this->assertFalse($id1 === $id2); // If static analysis is enabled, an error occurs because the type is different.
     }
 }
